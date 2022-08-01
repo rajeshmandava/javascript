@@ -121,3 +121,28 @@ if (dolphins > koalas && dolphins >= 100) {
 } else if (koalas === dolphins) {
   console.log(" Championship is draw");
 }
+
+let val; /*Number(prompt("Enter a value"));*/
+switch (val) {
+  case 1:
+    console.log("Input is number 1");
+    break;
+  case 2:
+    console.log("Input is number 2");
+    break;
+  case 3:
+    console.log("Input is number 3");
+    break;
+  default:
+    console.log(`${val} does not have switch case`);
+    break;
+}
+//Ternary operator challange
+
+let bill = 1000;
+let tip = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+console.log(
+  `The bill was ${bill}, the tip was ${tip}, and the total bill is ${
+    bill + tip
+  }`
+);
