@@ -170,3 +170,16 @@ function add(val1, val2) {
 
 const sumOfSums = add(add(3, 4), add(6, 9));
 console.log(sumOfSums);
+
+function calcAge1(birthYear) {
+  return 2022 - birthYear;
+}
+
+const age1 = calcAge1(2000);
+
+const calcAge2 = function (birthYear) {
+  return 2022 - birthYear;
+};
+
+const age2 = calcAge2(1993);
+console.log(age1, age2);
