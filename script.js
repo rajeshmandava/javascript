@@ -149,50 +149,64 @@
 
 "use strict";
 
-let hasDriversLicense = false;
-const passTest = true;
+// let hasDriversLicense = false;
+// const passTest = true;
 
-if (passTest) hasDriversLicense = true;
-if (hasDriversLicense) console.log("I can drive");
+// if (passTest) hasDriversLicense = true;
+// if (hasDriversLicense) console.log("I can drive");
 
-function logger() {
-  console.log("This is logger function");
-}
+// function logger() {
+//   console.log("This is logger function");
+// }
 
-logger();
-logger();
-logger();
+// logger();
+// logger();
+// logger();
 
-function add(val1, val2) {
-  const sum = val1 + val2;
-  return sum;
-}
+// function add(val1, val2) {
+//   const sum = val1 + val2;
+//   return sum;
+// }
 
-const sumOfSums = add(add(3, 4), add(6, 9));
-console.log(sumOfSums);
+// const sumOfSums = add(add(3, 4), add(6, 9));
+// console.log(sumOfSums);
 
-function calcAge1(birthYear) {
-  return 2022 - birthYear;
-}
+// function calcAge1(birthYear) {
+//   return 2022 - birthYear;
+// }
 
-const age1 = calcAge1(2000);
+// const age1 = calcAge1(2000);
 
-const calcAge2 = function (birthYear) {
-  return 2022 - birthYear;
-};
+// const calcAge2 = function (birthYear) {
+//   return 2022 - birthYear;
+// };
 
-const age2 = calcAge2(1993);
-console.log(age1, age2);
+// const age2 = calcAge2(1993);
+// console.log(age1, age2);
 
-const calcAge3 = (birthYear) => 2022 - birthYear;
-const age3 = calcAge3(2000);
-console.log(age1, age2, age3);
+// const calcAge3 = (birthYear) => 2022 - birthYear;
+// const age3 = calcAge3(2000);
+// console.log(age1, age2, age3);
 
-const yearsUntilRetirement = (birthYear, firstName) => {
-  const age = 2022 - birthYear;
-  const retirement = 65 - age;
-  return `${firstName} retires in ${retirement} years `;
-};
+// const yearsUntilRetirement = (birthYear, firstName) => {
+//   const age = 2022 - birthYear;
+//   const retirement = 65 - age;
+//   return `${firstName} retires in ${retirement} years `;
+// };
 
-console.log(yearsUntilRetirement(2000, "John"));
-console.log(yearsUntilRetirement(1992, "Jerry"));
+// console.log(yearsUntilRetirement(2000, "John"));
+// console.log(yearsUntilRetirement(1992, "Jerry"));
+
+let friends = ["John", "Jerry", "Tom"];
+console.log(friends);
+
+console.log(friends.shift());
+console.log(friends.unshift());
+console.log(friends);
+
+friends.push("steve");
+if (friends.includes("steve")) console.log("steve is in friends");
+
+console.log(friends.pop());
+console.log(friends);
+console.log(friends.entries());
