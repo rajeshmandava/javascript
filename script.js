@@ -263,3 +263,34 @@ console.log(rajesh.age);
 //"rajesh is 46-year old teacher, and he has a driver's license"
 
 console.log(rajesh.info());
+
+const mark = {
+  fullName: "Mark Miller",
+  mass: 78,
+  height: 1.69,
+
+  calcBMI: function () {
+    this.bmi = this.mass / (this.height * this.height);
+    return this.bmi;
+  },
+};
+
+const john = {
+  fullName: "John Smith",
+  mass: 92,
+  height: 1.95,
+
+  calcBMI: function () {
+    this.bmi = this.mass / (this.height * this.height);
+    return this.bmi;
+  },
+};
+
+john.calcBMI();
+mark.calcBMI();
+
+if (mark.bmi > john.bmi) {
+  console.log(`Mark's BMI (${mark.bmi}) is higher than John's (${john.bmi})`);
+} else {
+  console.log(`John's BMI (${john.bmi}) is higher than Mark's (${mark.bmi})`);
+}
