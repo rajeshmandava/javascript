@@ -197,34 +197,47 @@
 // console.log(yearsUntilRetirement(2000, "John"));
 // console.log(yearsUntilRetirement(1992, "Jerry"));
 
-let friends = ["John", "Jerry", "Tom"];
-console.log(friends);
+// let friends = ["John", "Jerry", "Tom"];
+// console.log(friends);
 
-console.log(friends.shift());
-console.log(friends.unshift());
-console.log(friends);
+// console.log(friends.shift());
+// console.log(friends.unshift());
+// console.log(friends);
 
-friends.push("steve");
-if (friends.includes("steve")) console.log("steve is in friends");
+// friends.push("steve");
+// if (friends.includes("steve")) console.log("steve is in friends");
 
-console.log(friends.pop());
-console.log(friends);
-console.log(friends.entries());
+// console.log(friends.pop());
+// console.log(friends);
+// console.log(friends.entries());
 
 const rajesh = {
   firstName: "rajesh",
   lastName: "Mandava",
   profession: "software developer",
+  birthYear: 1992,
   friends: ["Charan", "kiran", "venkat"],
+  hasDriversLicense: true,
+
+  calcAge: function () {
+    this.age = 2022 - this.birthYear;
+    return this.age;
+  },
+  info: function () {
+    const data = `${this.firstName} is ${this.calcAge()}-year old, and he has ${
+      this.hasDriversLicense ? "a" : "no"
+    } driver license`;
+    return data;
+  },
 };
-console.log(rajesh);
+// console.log(rajesh);
 
-console.log(rajesh.firstName);
-console.log(rajesh.lastName);
+// console.log(rajesh.firstName);
+// console.log(rajesh.lastName);
 
-const nameKey = "Name";
-console.log(rajesh["first" + nameKey]);
-console.log(rajesh["last" + nameKey]);
+// const nameKey = "Name";
+// console.log(rajesh["first" + nameKey]);
+// console.log(rajesh["last" + nameKey]);
 
 // const interestedIn = prompt(
 //   "What do you want to know about Rajesh? Choose between firstName, lastName, profession and friends"
@@ -236,9 +249,17 @@ console.log(rajesh["last" + nameKey]);
 //     "Wrong request! Choose between firstName, lastName, profession and friends"
 //   );
 
-rajesh.location = "Sweden";
-rajesh["linkedin"] = "@rajeshmandava";
-console.log(rajesh);
-console.log(
-  `${rajesh.firstName} has ${rajesh.friends.length} friends and his best friend is ${rajesh.friends[0]}`
-);
+// rajesh.location = "Sweden";
+// rajesh["linkedin"] = "@rajeshmandava";
+// console.log(rajesh);
+// console.log(
+//   `${rajesh.firstName} has ${rajesh.friends.length} friends and his best friend is ${rajesh.friends[0]}`
+// );
+
+console.log(rajesh.calcAge());
+console.log(rajesh.age);
+
+//Challange
+//"rajesh is 46-year old teacher, and he has a driver's license"
+
+console.log(rajesh.info());
