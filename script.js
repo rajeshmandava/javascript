@@ -210,3 +210,35 @@ if (friends.includes("steve")) console.log("steve is in friends");
 console.log(friends.pop());
 console.log(friends);
 console.log(friends.entries());
+
+const rajesh = {
+  firstName: "rajesh",
+  lastName: "Mandava",
+  profession: "software developer",
+  friends: ["Charan", "kiran", "venkat"],
+};
+console.log(rajesh);
+
+console.log(rajesh.firstName);
+console.log(rajesh.lastName);
+
+const nameKey = "Name";
+console.log(rajesh["first" + nameKey]);
+console.log(rajesh["last" + nameKey]);
+
+// const interestedIn = prompt(
+//   "What do you want to know about Rajesh? Choose between firstName, lastName, profession and friends"
+// );
+
+// if (rajesh[interestedIn]) console.log(rajesh[interestedIn]);
+// else
+//   console.log(
+//     "Wrong request! Choose between firstName, lastName, profession and friends"
+//   );
+
+rajesh.location = "Sweden";
+rajesh["linkedin"] = "@rajeshmandava";
+console.log(rajesh);
+console.log(
+  `${rajesh.firstName} has ${rajesh.friends.length} friends and his best friend is ${rajesh.friends[0]}`
+);
