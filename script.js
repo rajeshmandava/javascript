@@ -211,86 +211,116 @@
 // console.log(friends);
 // console.log(friends.entries());
 
-const rajesh = {
-  firstName: "rajesh",
-  lastName: "Mandava",
-  profession: "software developer",
-  birthYear: 1992,
-  friends: ["Charan", "kiran", "venkat"],
-  hasDriversLicense: true,
+// const rajesh = {
+//   firstName: "rajesh",
+//   lastName: "Mandava",
+//   profession: "software developer",
+//   birthYear: 1992,
+//   friends: ["Charan", "kiran", "venkat"],
+//   hasDriversLicense: true,
 
-  calcAge: function () {
-    this.age = 2022 - this.birthYear;
-    return this.age;
-  },
-  info: function () {
-    const data = `${this.firstName} is ${this.calcAge()}-year old, and he has ${
-      this.hasDriversLicense ? "a" : "no"
-    } driver license`;
-    return data;
-  },
-};
-// console.log(rajesh);
+//   calcAge: function () {
+//     this.age = 2022 - this.birthYear;
+//     return this.age;
+//   },
+//   info: function () {
+//     const data = `${this.firstName} is ${this.calcAge()}-year old, and he has ${
+//       this.hasDriversLicense ? "a" : "no"
+//     } driver license`;
+//     return data;
+//   },
+// };
+// // console.log(rajesh);
 
-// console.log(rajesh.firstName);
-// console.log(rajesh.lastName);
+// // console.log(rajesh.firstName);
+// // console.log(rajesh.lastName);
 
-// const nameKey = "Name";
-// console.log(rajesh["first" + nameKey]);
-// console.log(rajesh["last" + nameKey]);
+// // const nameKey = "Name";
+// // console.log(rajesh["first" + nameKey]);
+// // console.log(rajesh["last" + nameKey]);
 
-// const interestedIn = prompt(
-//   "What do you want to know about Rajesh? Choose between firstName, lastName, profession and friends"
-// );
+// // const interestedIn = prompt(
+// //   "What do you want to know about Rajesh? Choose between firstName, lastName, profession and friends"
+// // );
 
-// if (rajesh[interestedIn]) console.log(rajesh[interestedIn]);
-// else
-//   console.log(
-//     "Wrong request! Choose between firstName, lastName, profession and friends"
-//   );
+// // if (rajesh[interestedIn]) console.log(rajesh[interestedIn]);
+// // else
+// //   console.log(
+// //     "Wrong request! Choose between firstName, lastName, profession and friends"
+// //   );
 
-// rajesh.location = "Sweden";
-// rajesh["linkedin"] = "@rajeshmandava";
-// console.log(rajesh);
-// console.log(
-//   `${rajesh.firstName} has ${rajesh.friends.length} friends and his best friend is ${rajesh.friends[0]}`
-// );
+// // rajesh.location = "Sweden";
+// // rajesh["linkedin"] = "@rajeshmandava";
+// // console.log(rajesh);
+// // console.log(
+// //   `${rajesh.firstName} has ${rajesh.friends.length} friends and his best friend is ${rajesh.friends[0]}`
+// // );
 
-console.log(rajesh.calcAge());
-console.log(rajesh.age);
+// console.log(rajesh.calcAge());
+// console.log(rajesh.age);
 
-//Challange
-//"rajesh is 46-year old teacher, and he has a driver's license"
+// //Challange
+// //"rajesh is 46-year old teacher, and he has a driver's license"
 
-console.log(rajesh.info());
+// console.log(rajesh.info());
 
-const mark = {
-  fullName: "Mark Miller",
-  mass: 78,
-  height: 1.69,
+// const mark = {
+//   fullName: "Mark Miller",
+//   mass: 78,
+//   height: 1.69,
 
-  calcBMI: function () {
-    this.bmi = this.mass / (this.height * this.height);
-    return this.bmi;
-  },
-};
+//   calcBMI: function () {
+//     this.bmi = this.mass / (this.height * this.height);
+//     return this.bmi;
+//   },
+// };
 
-const john = {
-  fullName: "John Smith",
-  mass: 92,
-  height: 1.95,
+// const john = {
+//   fullName: "John Smith",
+//   mass: 92,
+//   height: 1.95,
 
-  calcBMI: function () {
-    this.bmi = this.mass / (this.height * this.height);
-    return this.bmi;
-  },
-};
+//   calcBMI: function () {
+//     this.bmi = this.mass / (this.height * this.height);
+//     return this.bmi;
+//   },
+// };
 
-john.calcBMI();
-mark.calcBMI();
+// john.calcBMI();
+// mark.calcBMI();
 
-if (mark.bmi > john.bmi) {
-  console.log(`Mark's BMI (${mark.bmi}) is higher than John's (${john.bmi})`);
-} else {
-  console.log(`John's BMI (${john.bmi}) is higher than Mark's (${mark.bmi})`);
+// if (mark.bmi > john.bmi) {
+//   console.log(`Mark's BMI (${mark.bmi}) is higher than John's (${john.bmi})`);
+// } else {
+//   console.log(`John's BMI (${john.bmi}) is higher than Mark's (${mark.bmi})`);
+// }
+
+console.log("Looping 1 time");
+console.log("Looping 2 time");
+console.log("Looping 3 time");
+console.log("Looping 4 time");
+console.log("Looping 5 time");
+console.log("Looping 6 time");
+console.log("Looping 7 time");
+console.log("Looping 8 time");
+console.log("Looping 9 time");
+console.log("Looping 10 time");
+
+for (let i = 1; i <= 10; i++) console.log(`looping ${i} time`);
+
+const rajesh = [
+  "Rajesh",
+  "Mandava",
+  2022 - 1992,
+  "Software Developer",
+  ["Charan", "Venkat", "Sai"],
+  true,
+];
+
+const types = [];
+for (let i = 0; i < rajesh.length; i++) {
+  console.log(rajesh[i], typeof rajesh[i]);
+  // types[i] = typeof rajesh[i];
+  types.push(typeof rajesh[i]);
 }
+console.log(types);
