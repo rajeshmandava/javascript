@@ -58,6 +58,7 @@ document.querySelector(".again").addEventListener("click", function () {
   secretNumber = Math.trunc(Math.random() * 20) + 1;
   document.querySelector(".message").textContent = "Start Guessing ...";
   document.querySelector(".number").textContent = "?";
-  document.querySelector(".guess").textContent = null;
+  document.querySelector(".guess").value = "";
+  document.querySelector("body").style.backgroundColor = "#222";
   console.log(secretNumber);
 });
