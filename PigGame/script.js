@@ -12,11 +12,6 @@ const current1Element = document.querySelector("#current--1");
 const player0Element = document.querySelector(".player--0");
 const player1Element = document.querySelector(".player--1");
 
-const scores = [0, 0];
-let currentScore = 0;
-let activePlayer = 0;
-let playing = true;
-
 const switchPlayer = function () {
   document.getElementById(`current--${activePlayer}`).textContent = 0;
   activePlayer = activePlayer === 0 ? 1 : 0;
@@ -24,12 +19,25 @@ const switchPlayer = function () {
   player0Element.classList.toggle("player--active");
   player1Element.classList.toggle("player--active");
 };
-const resetNewGame = function () {
+let scores, currentScore, activePlayer, playing;
+const init = function () {
+  scores = [0, 0];
+  currentScore = 0;
+  activePlayer = 0;
+  playing = true;
+
   score0Element.textContent = 0;
   score1Element.textContent = 0;
+  current0Element.textContent = 0;
+  current1Element.textContent = 0;
+  player0Element.classList.remove("player--winner");
+  player1Element.classList.remove("player--winner");
+  player0Element.classList.add("player--active");
+  player1Element.classList.remove("player--active");
   console.log("New game button");
 };
-document.querySelector(".btn--new").addEventListener("click", resetNewGame);
+init();
+document.querySelector(".btn--new").addEventListener("click", init);
 
 diceElement.classList.add("hidden");
 score0Element.textContent = 0;
@@ -64,7 +72,7 @@ btnHold.addEventListener("click", function () {
     document.getElementById(`score--${activePlayer}`).textContent =
       scores[activePlayer];
 
-    if (scores[activePlayer] >= 20) {
+    if (scores[activePlayer] >= 100) {
       playing = false;
       document
         .querySelector(`.player--${activePlayer}`)
