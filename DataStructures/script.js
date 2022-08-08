@@ -40,6 +40,11 @@ const restaurant = {
       close: 24,
     },
   },
+  orderPasta: function (ing1, ing2, ing3) {
+    console.log(
+      `Here is your delicious pasta with ${ing1}, ${ing2} and ${ing3}`
+    );
+  },
 };
 
 // let [first, second] = restaurant.categories;
@@ -62,7 +67,7 @@ const restaurant = {
 // console.log(i, j, k);
 
 const { name, openingHours, categories } = restaurant;
-console.log(name, openingHours, categories);
+// console.log(name, openingHours, categories);
 
 const {
   name: restaurantName,
@@ -70,34 +75,81 @@ const {
   categories: tags,
 } = restaurant;
 
-console.log(restaurantName, hours, tags);
+// console.log(restaurantName, hours, tags);
 
 //Default values
-const { menu = [], starterMenu: starters = [] } = restaurant;
-console.log(menu, starters);
+// const { menu = [], starterMenu: starters = [] } = restaurant;
+// console.log(menu, starters);
 
 //Mutating variables
 let a = 111;
 let b = 999;
 const obj = { a: 23, b: 7, c: 14 };
 
-({ a, b } = obj);
-console.log(a, b);
+// ({ a, b } = obj);
+// console.log(a, b);
 
-//nested objects
-const {
-  fri: { open: o, close: c },
-} = openingHours;
-console.log(o, c);
+// //nested objects
+// const {
+//   fri: { open: o, close: c },
+// } = openingHours;
+// console.log(o, c);
 
-restaurant.orderDelivery({
-  time: "22.30",
-  address: "Via del Sole, 21",
-  mainIndex: 2,
-  starterIndex: 2,
-});
+// restaurant.orderDelivery({
+//   time: "22.30",
+//   address: "Via del Sole, 21",
+//   mainIndex: 2,
+//   starterIndex: 2,
+// });
 
-restaurant.orderDelivery({
-  address: "Via del sole, 21",
-  starterIndex: 1,
-});
+// restaurant.orderDelivery({
+//   address: "Via del sole, 21",
+//   starterIndex: 1,
+// });
+
+//Spread operator added in ES6
+const arr = [7, 8, 9];
+const newArr = [1, 2, ...arr];
+
+console.log(newArr);
+//Spread operator when we need array elements individually with using object's variables individually with commas
+console.log(...newArr);
+const newMenu = [...restaurant.mainMenu, "Gnocci", "Biriyani", "Prawns fry"];
+console.log(newMenu);
+
+const mainMenuCopy = [
+  ...restaurant.mainMenu,
+  "Fish Curry",
+  "Prawn Biriyani",
+  "Mutton Biriyani",
+];
+
+console.log(mainMenuCopy);
+
+const menu = [...restaurant.mainMenu, ...restaurant.starterMenu];
+console.log(menu);
+
+//Iterables : arrays, strings, maps, sets. But NOT Objects
+
+const str = "Rajesh";
+const letters = [...str, " ", "S."];
+console.log(letters);
+console.log(...letters);
+
+// const ingridients = [
+//   prompt(" Let's make Pasta! Ingredient 1?"),
+//   prompt("Ingredient 2?"),
+//   prompt("Ingredient 3?"),
+// ];
+
+// console.log(ingridients);
+// // restaurant.orderPasta(ingridients[0], ingridients[1], ingridients[2]);
+// restaurant.orderPasta(...ingridients);
+
+const newRestaurant = { foundedIn: 1998, ...restaurant, founder: "Gustav" };
+console.log(newRestaurant);
+
+const restaurantCopy = { ...restaurant };
+restaurantCopy.name = "Ristorante Roma";
+console.log(restaurantCopy.name);
+console.log(restaurant.name);
