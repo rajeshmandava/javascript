@@ -40,3 +40,21 @@ console.log(`${singleString}`);
 let str = 'Hello, What\'s your name? Is it "Mike"?';
 console.log(str);
 //Using prettier extension so the usage of correct quotes is taken care automatically
+
+//Number: 64-bit floating point number
+// Can save large numbers including signed, unsigned, numbers with decimals and more
+// Number can be used to represent decimals, exponentials, octal, hexadecimal and binary numbers.
+
+let intNr = 1;
+let decNr = 1.5;
+let expNr = 1.4e15;
+let octNr = 0o10;
+let hexNr = 0x3e8;
+let binNr = 0b101;
+console.log(intNr, decNr, expNr, octNr, hexNr, binNr);
+let intNr2 = 3434;
+let intNr3 = -11000;
+console.log(intNr2, intNr3);
+let decNr2 = 22.8278;
+let binNr2 = 0b10101010;
+console.log(decNr2, binNr2);
