@@ -132,6 +132,14 @@ const mainMenuCopy = [
 // console.log(mainMenuCopy);
 
 const menu = [...restaurant.mainMenu, ...restaurant.starterMenu];
+
+for (const item of menu) {
+  console.log(item);
+}
+for (const [i, el] of menu.entries()) {
+  console.log(`${i + 1}: ${el}`);
+}
+// console.log(menu.entries());
 // console.log(menu);
 
 //Iterables : arrays, strings, maps, sets. But NOT Objects
@@ -164,19 +172,19 @@ const newArr1 = [1, 2, 3, 4, 5, ...[10, 11]];
 
 const [x, y, ...others] = [1, 2, 3, 4, 5];
 
-console.log(x, y, others);
+// console.log(x, y, others);
 
 const [pizza, , risotto, ...otherFood] = [
   ...restaurant.mainMenu,
   ...restaurant.starterMenu,
 ];
 
-console.log(pizza, risotto, otherFood);
+// console.log(pizza, risotto, otherFood);
 
 // 1. Objects
 const { sat, ...weekdays } = restaurant.openingHours;
-console.log(sat);
-console.log(weekdays);
+// console.log(sat);
+// console.log(weekdays);
 
 // 2. Functions
 const add = function (...numbers) {
@@ -185,12 +193,12 @@ const add = function (...numbers) {
   return sum;
 };
 
-console.log(add(2, 1));
-console.log(add(4, 7, 8, 9, 1));
-console.log(add(9, 8, 6, 3, 5, 6, 7, 8));
+// console.log(add(2, 1));
+// console.log(add(4, 7, 8, 9, 1));
+// console.log(add(9, 8, 6, 3, 5, 6, 7, 8));
 
 const z = [27, 5, 3];
-console.log(add(...z));
+// console.log(add(...z));
 
-restaurant.orderPizza("Chicken", "Vegetables", "Cheese");
-restaurant.orderPizza("Mushrooms", "Onions");
+// restaurant.orderPizza("Chicken", "Vegetables", "Cheese");
+// restaurant.orderPizza("Mushrooms", "Onions");
