@@ -115,3 +115,24 @@ let betterOption = null;
 console.log("Same null:", lastName === betterOption);
 
 // lastName is undefined by default and to compare undefined with another variable to get false as result assign null to second variable
+
+//Working out the type of variable
+// typeof is an operator which returns the type of the variable
+
+let testVariable = 1;
+
+variableTypeTest1 = typeof testVariable;
+// variableTypeTest2 = typeof testVariable;
+console.log(variableTypeTest1);
+
+let str3 = "Hello!";
+let nr = 10;
+let undef = undefined;
+let unknown = null;
+console.log("str", typeof str);
+console.log("nr", typeof nr);
+console.log("bigNr", typeof bigNr);
+console.log("bool1", bool1);
+console.log("sym1", sym1);
+console.log("undef", undef);
+console.log("unknown", unknown);
