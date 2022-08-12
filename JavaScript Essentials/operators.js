@@ -75,3 +75,20 @@ nr1 = 50;
 nr2 = 100;
 result1 = nr1 % nr2;
 console.log(`${nr1}%${nr2}=${result1}`);
+
+// Unary Operators
+// Increment and Decrement operator
+
+nr1 = 2;
+console.log(nr1++); //Post Increment
+console.log(nr1);
+
+nr1 = 2;
+console.log(++nr1); //Pre Increment
+
+nr1 = 2;
+console.log(nr1--); //Post Decrement
+console.log(nr1);
+
+nr1 = 2;
+console.log(--nr1); // Pre Decrement
