@@ -142,8 +142,8 @@ let unknown = null;
 
 let nr1 = 2;
 let nr2 = "2";
-console.log(nr1 * nr2); // JavaScript converts nr2 to Number results to 4
-console.log(nr1 + nr2); // JavaScript converts nr1 to string and concatenates strings results to '22'
+// console.log(nr1 * nr2); // JavaScript converts nr2 to Number results to 4
+// console.log(nr1 + nr2); // JavaScript converts nr1 to string and concatenates strings results to '22'
 
 // JavaScript has build-in functions we can use to convert the data type of the variable
 // String(), Number() and Boolean()
@@ -154,23 +154,23 @@ console.log(nr1 + nr2); // JavaScript converts nr1 to string and concatenates st
 
 let nr3 = 10.212981;
 let sNr3 = String(nr3);
-console.log(typeof sNr3, sNr3);
+// console.log(typeof sNr3, sNr3);
 
 unknown = null;
 let sUnkown = String(unknown);
-console.log(typeof sUnkown, sUnkown);
+// console.log(typeof sUnkown, sUnkown);
 
 let undefinedString;
-console.log(typeof undefinedString, undefinedString);
+// console.log(typeof undefinedString, undefinedString);
 
 // Number()
 // Number() tried to convert a variable to a number, if that cannot be done logically, it will change the value to NaN(Not a Number)
 let unknownNumber;
 let knownNumber = Number(unknownNumber);
-console.log(typeof knownNumber, knownNumber);
+// console.log(typeof knownNumber, knownNumber);
 
 knownNumber = Number(sNr3);
-console.log(typeof knownNumber, knownNumber);
+// console.log(typeof knownNumber, knownNumber);
 
 //Boolean()
 // Boolean() converts everything to true except for null, undefined, 0(Number) and an empty string.
@@ -180,19 +180,19 @@ let booleanUndefined;
 let booleanNumber = 0;
 let booleanTestString = "";
 
-console.log(typeof booleanNull, booleanNull);
-console.log(typeof booleanUndefined, booleanUndefined);
-console.log(typeof booleanNumber, booleanNumber);
-console.log(typeof booleanTestString, booleanTestString);
+// console.log(typeof booleanNull, booleanNull);
+// console.log(typeof booleanUndefined, booleanUndefined);
+// console.log(typeof booleanNumber, booleanNumber);
+// console.log(typeof booleanTestString, booleanTestString);
 
 let boolean = Boolean(booleanNull);
-console.log(typeof boolean, boolean);
+// console.log(typeof boolean, boolean);
 boolean = Boolean(booleanUndefined);
-console.log(typeof boolean, boolean);
+// console.log(typeof boolean, boolean);
 boolean = Boolean(booleanNumber);
-console.log(typeof boolean, boolean);
+// console.log(typeof boolean, boolean);
 boolean = Boolean(booleanTestString);
-console.log(typeof boolean, boolean);
+// console.log(typeof boolean, boolean);
 
 // Practice exercise 2.1
 str1 = "Laurence";
@@ -201,8 +201,8 @@ let val1 = undefined;
 let val2 = null;
 let myNum = 1000;
 
-console.log(typeof str1, str1);
-console.log(typeof str2, str2);
-console.log(typeof val1, val1);
-console.log(typeof val2, val2);
-console.log(typeof myNum, myNum);
+// console.log(typeof str1, str1);
+// console.log(typeof str2, str2);
+// console.log(typeof val1, val1);
+// console.log(typeof val2, val2);
+// console.log(typeof myNum, myNum);
