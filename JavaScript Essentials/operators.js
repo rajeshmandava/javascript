@@ -107,3 +107,10 @@ console.log((1 + 1) * 3 ** 2);
 3. Prefix Increment and Decrement --,++  Ex: ++x, --y
 4. Multiplication, Division, Modulus *, /, % Ex: x*y,x/y, x%y
 5. Addition and Subtraction +, -  Ex: x+y, x-y */
+
+// Practice exercise 2.3
+// Calculate the length of the third side for a right angle triagnle where a^2 + b^2 = c^2
+let a = prompt("Enter length of side a:");
+let b = prompt("Enter length of side b:");
+let c = Math.sqrt(a * a + b * b);
+console.log(`If a is ${a} and b is ${b}, then c is ${c}`);
