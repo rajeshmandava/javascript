@@ -44,3 +44,51 @@ nr1 = 30;
 nr2 = 5;
 result1 = nr1 / nr2;
 console.log(result1);
+
+// Exponentiation
+// Exponentiation means raising a certain base number to the power of the exponenet.
+// operator **
+nr1 = 2;
+nr2 = 3;
+result1 = nr1 ** nr2;
+console.log(result1);
+
+//Modulus
+// Modulus is the remainder of two numbers divided each other
+
+nr1 = 10;
+nr2 = 3;
+result1 = nr1 % nr2; // 10%3 = 1(Remainder)
+console.log(`${nr1}%${nr2}=${result1}`);
+
+nr1 = 8;
+nr2 = 2;
+result1 = nr1 % nr2;
+console.log(`${nr1}%${nr2}=${result1}`);
+
+nr1 = 15;
+nr2 = 4;
+result1 = nr1 % nr2;
+console.log(`${nr1}%${nr2}=${result1}`);
+
+nr1 = 50;
+nr2 = 100;
+result1 = nr1 % nr2;
+console.log(`${nr1}%${nr2}=${result1}`);
+
+// Unary Operators
+// Increment and Decrement operator
+
+nr1 = 2;
+console.log(nr1++); //Post Increment
+console.log(nr1);
+
+nr1 = 2;
+console.log(++nr1); //Pre Increment
+
+nr1 = 2;
+console.log(nr1--); //Post Decrement
+console.log(nr1);
+
+nr1 = 2;
+console.log(--nr1); // Pre Decrement
