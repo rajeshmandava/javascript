@@ -134,3 +134,36 @@ console.log(`x:${x}`);
 
 x %= 3;
 console.log(`x:${x}`);
+
+// Comparison Operators
+// 1. Equality check
+// 2. Not Equal
+// 3. Greater than and Less than operator
+
+// Equality check operator
+x = 10;
+let xStr = "10";
+console.log(x === xStr);
+let y = 10;
+console.log(x === y);
+
+// Not Equality check operator
+let trueCheck = true;
+let falseCheck = false;
+
+console.log(trueCheck !== falseCheck);
+console.log(x !== xStr);
+console.log(x !== y);
+
+// Greater than and Smaller Operators
+let a = 10;
+let b = 15;
+console.log(a > b);
+console.log(a < b);
+let testString1 = "String";
+let testString2 = "string";
+console.log(testString1 < testString2);
+
+let c = 15;
+console.log(a >= c);
+console.log(b <= c);
