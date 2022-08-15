@@ -110,7 +110,27 @@ console.log((1 + 1) * 3 ** 2);
 
 // Practice exercise 2.3
 // Calculate the length of the third side for a right angle triagnle where a^2 + b^2 = c^2
-let a = prompt("Enter length of side a:");
-let b = prompt("Enter length of side b:");
-let c = Math.sqrt(a * a + b * b);
-console.log(`If a is ${a} and b is ${b}, then c is ${c}`);
+// let a = prompt("Enter length of side a:");
+// let b = prompt("Enter length of side b:");
+// let c = Math.sqrt(a * a + b * b);
+// console.log(`If a is ${a} and b is ${b}, then c is ${c}`);
+
+// Assignment operators
+let x = 12;
+x += 2;
+console.log(`x:${x}`);
+
+x -= 2;
+console.log(`x:${x}`);
+
+x *= 6;
+console.log(`x:${x}`);
+
+x /= 3;
+console.log(`x:${x}`);
+
+x **= 3;
+console.log(`x:${x}`);
+
+x %= 3;
+console.log(`x:${x}`);
