@@ -167,3 +167,23 @@ console.log(testString1 < testString2);
 let c = 15;
 console.log(a >= c);
 console.log(b <= c);
+
+// Logical Operators
+
+x = 1;
+y = 2;
+let z = 3;
+// AND
+console.log(x < y && y < z);
+console.log(x > y && y < z);
+
+// OR
+console.log(x > y || y < z);
+console.log(x > y || y > z);
+
+// Not
+x = false;
+console.log(!x);
+x = 1;
+y = 2;
+console.log(!(x < y));
