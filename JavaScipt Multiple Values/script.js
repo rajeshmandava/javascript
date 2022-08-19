@@ -73,3 +73,10 @@ let shoppingList = ["Milk", "Bread", "Apples"];
 console.log(`length of shoppingList array is ${shoppingList.length}`);
 shoppingList[1] = "Bananas";
 console.log(shoppingList);
+
+shoppingList.push("Ornages");
+console.log(shoppingList);
+
+// Adding array of elements at a certain index
+shoppingList.splice(2, 0, "Coffee", "Coke");
+console.log(shoppingList);
