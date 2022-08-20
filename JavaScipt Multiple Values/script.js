@@ -166,3 +166,20 @@ shoppingList.splice(indexOfBananas + 1, 0, "Carrots", "Lettuce");
 let newShoppingList = ["Juice", "Pop"];
 shoppingList = shoppingList.concat(newShoppingList).concat(newShoppingList);
 console.log(shoppingList);
+
+// Multidimensional arrays
+let someValues1 = [1, 2, 3];
+let someValues2 = [4, 5, 6];
+let someValues3 = [7, 8, 9];
+let arrOfArrays = [someValues1, someValues2, someValues3];
+console.log(arrOfArrays);
+console.log(arrOfArrays[1][2]);
+let arrOfArraysOfArrays = [arrOfArrays, arrOfArrays, arrOfArrays];
+console.log(arrOfArraysOfArrays);
+console.log(arrOfArraysOfArrays[0][1]);
+
+// Practice exercise 3.3
+
+let num = [1, 2, 3];
+let arrOfNum = [num, num, num];
+console.log(arrOfNum[2]);
