@@ -230,3 +230,43 @@ myCarProperty = "make";
 console.log(myCar[myCarProperty]);
 myCarProperty = "model";
 console.log(myCar[myCarProperty]);
+
+// Working with objects and arrays
+
+let addresses = [
+  {
+    street: "2nd street",
+    number: "123",
+    zipCode: "33116",
+    city: "Miami",
+    state: "Florida",
+  },
+  {
+    street: "1st West Avenu",
+    number: "56",
+    zipCode: "67846",
+    city: "Addison",
+    state: "Texas",
+  },
+];
+
+let company = {
+  companyName: "Healthy Candy",
+  activities: [
+    "Food Manufacturing",
+    "improving kids' health",
+    "manufacturing toys",
+  ],
+  addresses,
+  yearOfEstablishment: 2021,
+};
+
+company.addresses[0].zipCode = 33117;
+
+console.log(company);
+console.log(company.activities);
+
+// Objects in arrays
+
+let streetName = addresses[0].street;
+console.log(streetName);
