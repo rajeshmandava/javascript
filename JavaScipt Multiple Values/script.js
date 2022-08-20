@@ -11,7 +11,7 @@ let arr4 = [10];
 // console.log(`index ${i}'s value : ${arr3[i]}`);
 // console.log(arr4);
 
-let arr = ["hi", "there", 5, true, NaN, undefined];
+// let arr = ["hi", "there", 5, true, NaN, undefined];
 // for (let i = 0; i < arr.length; i++) console.log(typeof arr[i]);
 
 // Array using const
@@ -183,3 +183,50 @@ console.log(arrOfArraysOfArrays[0][1]);
 let num = [1, 2, 3];
 let arrOfNum = [num, num, num];
 console.log(arrOfNum[2]);
+
+// Objects in JavaScript
+// Object : An Object is a group of multiple values.
+let arr = [0, 1, 2];
+console.log(typeof arr);
+
+let dog = {
+  dogName: "Coupe",
+  weight: 10,
+  color: "white",
+  breed: "Great Pyrenees",
+  age: 2,
+  burglarBiter: true,
+};
+
+// Accessing the Object parameters
+let dogColor1 = dog["color"];
+console.log(dogColor1);
+dogColor1 = dog.color;
+console.log(dogColor1);
+
+// Updating Objects
+dog.color = "Blue";
+dog.age = 3;
+console.log(dog);
+
+// Practice exercise 3.4
+let myCar = {
+  make: "BMW",
+  model: "520d xDrive",
+  variant: "M Sport",
+  transmission: "Automatic",
+  mileage: 20,
+  motor: "2.0ltr",
+  fuel: "Diesel",
+  color: "white",
+};
+
+let myCarProperty = "color";
+console.log(myCar[myCarProperty]);
+myCarProperty = "forSale";
+myCar[myCarProperty] = true;
+console.log(`Car is available for purchase : ${myCar[myCarProperty]}`);
+myCarProperty = "make";
+console.log(myCar[myCarProperty]);
+myCarProperty = "model";
+console.log(myCar[myCarProperty]);
