@@ -69,16 +69,16 @@ numbers[5] = 72;
 // console.log(numbers);
 
 // Practice exercise 3.1
-let shoppingList = ["Milk", "Bread", "Apples"];
-// console.log(`length of shoppingList array is ${shoppingList.length}`);
-shoppingList[1] = "Bananas";
-// console.log(shoppingList);
+// let shoppingList = ["Milk", "Bread", "Apples"];
+// // console.log(`length of shoppingList array is ${shoppingList.length}`);
+// shoppingList[1] = "Bananas";
+// // console.log(shoppingList);
 
-shoppingList.push("Ornages");
-// console.log(shoppingList);
+// shoppingList.push("Ornages");
+// // console.log(shoppingList);
 
-// Adding array of elements at a certain index
-shoppingList.splice(2, 0, "Coffee", "Coke");
+// // Adding array of elements at a certain index
+// shoppingList.splice(2, 0, "Coffee", "Coke");
 // console.log(shoppingList);
 // console.log(shoppingList.push("Fish"));
 
@@ -104,21 +104,65 @@ let arr9 = arr8.concat(8, 9, 10);
 // Deleting the array elements
 
 // pop() function: pops last element from the array
-console.log(arr9.pop());
-console.log(arr9);
+// console.log(arr9.pop());
+// console.log(arr9);
 
 // shift() : Deletes the first element of the array and shift all elements by their indices by one
 
 arr9.shift();
-console.log(arr9);
+// console.log(arr9);
 
 // splice() : takes two params
 // 1st : starting index to delete elements
 // 2nd : Last index to delete elements
 
 arr9.splice(1, 2);
-console.log(arr9);
+// console.log(arr9);
 
 // delete keywoord removes the element and replaces with an empty element in the array.
 delete arr9[1];
+// console.log(arr9);
+
+// Finding Elements
+
+arr9 = [1, 2, 3, 4, 5];
 console.log(arr9);
+let findValue = arr9.find(function (e) {
+  return e === 5;
+});
+let findValue2 = arr9.find((e) => e === 10);
+// console.log(findValue, findValue2);
+
+// console.log(arr9.indexOf(2, 0));
+
+// Sorting array elements
+let names = ["James", "Alicia", "William", "Maria", "Annie"];
+names.sort();
+// console.log(names);
+
+let ages = [18, 72, 22, 90];
+ages.sort();
+// console.log(ages);
+
+// Reversing array elements
+ages.reverse();
+// console.log(ages);
+
+// Practice exercise 3.2
+
+let shoppingList = [];
+shoppingList.push("Milk");
+shoppingList.push("Bread");
+shoppingList.push("Apples");
+
+shoppingList.splice(1, 1, "Bananas", "Eggs");
+// console.log(shoppingList);
+shoppingList.pop();
+// console.log(shoppingList);
+shoppingList.sort();
+let indexOfMilk = shoppingList.indexOf("Milk");
+let indexOfBananas = shoppingList.indexOf("Bananas");
+shoppingList.splice(indexOfBananas + 1, 0, "Carrots", "Lettuce");
+let newShoppingList = ["Juice", "Pop"];
+shoppingList = shoppingList.concat(newShoppingList).concat(newShoppingList);
+console.log(shoppingList);
