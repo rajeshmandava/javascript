@@ -80,23 +80,45 @@ shoppingList.push("Ornages");
 // Adding array of elements at a certain index
 shoppingList.splice(2, 0, "Coffee", "Coke");
 // console.log(shoppingList);
-console.log(shoppingList.push("Fish"));
+// console.log(shoppingList.push("Fish"));
 
 let arrOfShapes = ["circle", "triangle", "rectangle", "pentagon"];
 arrOfShapes.splice(2, 0, "square", "trapezoid");
-console.log(arrOfShapes);
+// console.log(arrOfShapes);
 
 //The first parameters in splice funtion is the starting index
 // The second parameter in splice function is to delete the elements in the array
 arrOfShapes.splice(2, 4, "1", "2");
-console.log(arrOfShapes);
+// console.log(arrOfShapes);
 
 // concat() function
 let arr5 = [1, 2, 3];
 let arr6 = [4, 5, 6];
 let arr7 = arr5.concat(arr6);
-console.log(arr7);
+// console.log(arr7);
 let arr8 = arr7.concat(7);
-console.log(arr8);
+// console.log(arr8);
 let arr9 = arr8.concat(8, 9, 10);
+// console.log(arr9);
+
+// Deleting the array elements
+
+// pop() function: pops last element from the array
+console.log(arr9.pop());
+console.log(arr9);
+
+// shift() : Deletes the first element of the array and shift all elements by their indices by one
+
+arr9.shift();
+console.log(arr9);
+
+// splice() : takes two params
+// 1st : starting index to delete elements
+// 2nd : Last index to delete elements
+
+arr9.splice(1, 2);
+console.log(arr9);
+
+// delete keywoord removes the element and replaces with an empty element in the array.
+delete arr9[1];
 console.log(arr9);
