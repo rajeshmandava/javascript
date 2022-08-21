@@ -270,3 +270,8 @@ console.log(company.activities);
 
 let streetName = addresses[0].street;
 console.log(streetName);
+
+// Practice exercise 3.4
+let people = {
+  friends: [],
+};
