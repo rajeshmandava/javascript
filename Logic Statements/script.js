@@ -41,8 +41,8 @@ if (age < 3) {
   message = "A ticket is 7 dollars";
 }
 
-console.log(message);
-console.log(`Your total cost is ${cost}`);
+// console.log(message);
+// console.log(`Your total cost is ${cost}`);
 
 if (age < 3) {
   console.log("Access is free under three");
@@ -55,7 +55,7 @@ if (age < 3) {
 }
 
 // Practice exercise 4.2
-let inputAge = Number(prompt("Enter your age"));
+// let inputAge = Number(prompt("Enter your age"));
 
 if (age >= 21) {
   message = " You are allowed to enter and allowed to purchase alcohol";
@@ -64,4 +64,11 @@ if (age >= 21) {
 } else {
   message = "You are not allowed to enter";
 }
+// console.log(message);
+
+// Practice ex: 4.3
+let validId = true;
+validId
+  ? (message = "Allowed to Enter the premises")
+  : (message = "Not allowed to enter");
 console.log(message);
