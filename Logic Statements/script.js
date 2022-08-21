@@ -72,3 +72,78 @@ validId
   ? (message = "Allowed to Enter the premises")
   : (message = "Not allowed to enter");
 console.log(message);
+
+// Switch Statements
+let activity = "Get up";
+if (activity === "Get up") {
+  console.log("It is 6.30PM");
+} else if (activity === "Breakfast") {
+  console.log("It is 7:00AM");
+} else if (activity === "Drive to work") {
+  console.log("It is 8:00AM");
+} else if (activity === "Lunch") {
+  console.log("It is 12:00PM");
+} else if (activity === "Drive home") {
+  console.log("It is 5:00PM");
+} else if (activity === "Dinner") {
+  console.log("It is 6.30PM");
+}
+
+// Now change activity into a switch statement
+activity = "Luch";
+switch (activity) {
+  case "Get up":
+    console.log("It is 6.30AM");
+    break;
+  case "Breakfast":
+    console.log("It is 7:00PM");
+    break;
+  case "Drive to work":
+    console.log("It is 8:00AM");
+    break;
+  case "Lunch":
+    console.log("It is 12:00PM");
+    break;
+  case "Drive home":
+    console.log("It is 5:00PM");
+    break;
+  case "Dinner":
+    console.log("It is 6.30PM");
+    break;
+  default:
+    console.log("I cannot determine the current time");
+    break;
+}
+
+// Practice exercise 4.4
+//Random number generator
+
+let randomNumber = Math.random();
+randomNumber = randomNumber * 6;
+randomNumber = Math.floor(randomNumber);
+console.log(randomNumber);
+
+let inputNum = Number(prompt("Enter your favorite ball from 0-5"));
+switch (randomNumber) {
+  case 0:
+    message = "0  Ball";
+    break;
+  case 1:
+    message = "1 Ball";
+    break;
+  case 2:
+    message = "2 Ball";
+    break;
+  case 3:
+    message = "3 Ball";
+    break;
+  case 4:
+    message = "4 Ball";
+    break;
+  case 5:
+    message = "5 Ball";
+    break;
+}
+console.log(
+  `Your choosen ball : ${inputNum} and computer choosen ball : ${randomNumber}`
+);
